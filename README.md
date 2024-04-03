@@ -1,2 +1,2 @@
 # Accident Detection ML Model
- My Final Year COllege Project . QERS (Quick Emergency Response System)
+ My Final Year College Project . QERS (Quick Emergency Response System)
