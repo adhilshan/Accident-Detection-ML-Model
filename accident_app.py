@@ -10,6 +10,9 @@ from multiprocessing import Pool
 import tempfile
 import streamlit as st
 import base64
+import subprocess
+if not os.path.isfile('model.h5'):
+    subprocess.run(['curl --output model.h5 "https://media.githubusercontent.com/media/ShyamaleeT/glaucocare/main/sep_5.h5"'], shell=True)
 
 # [All the functions from first code option]
 
@@ -260,7 +263,7 @@ SAMPLE_VIDEOS_UNTRIMMED = ["Video4.mp4", "Video5.mp4", "Video6.mp4","Video7.mp4"
 SAMPLE_VIDEOS_TRIMMED = ["Video1.mp4", "Video2.mp4", "Video3.mp4"]
 
 # Ensure your model is loaded globally
-loaded_model = load_model('Updated_80_percent_new_model.h5')
+loaded_model = load_model('model.h5')
 
 def display_selected_sample_video(videos_list):
     selected_video = st.selectbox("Select a sample video to play:", videos_list)
