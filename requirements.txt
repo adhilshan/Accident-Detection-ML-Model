@@ -2,4 +2,3 @@ streamlit
 tensorflow
 opencv-python-headless
 numpy
-subprocess
