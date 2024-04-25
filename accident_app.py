@@ -12,7 +12,7 @@ import streamlit as st
 import base64
 import subprocess
 if not os.path.isfile('model.h5'):
-    subprocess.run(['curl --output model.h5 "https://github.com/adhilshan/Accident-Detection-ML-Model/raw/main/Updated_80_percent_new_model.h5"'], shell=True)
+    subprocess.run(['curl --output model.h5 "https://media.githubusercontent.com/media/ShyamaleeT/glaucocare/main/sep_5.h5"'], shell=True)
 
 # [All the functions from first code option]
 
